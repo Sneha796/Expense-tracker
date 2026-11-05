@@ -24,10 +24,10 @@ aria-expanded="false" aria-label="Toggle navigation">
 <a class="nav-link active" aria-current="page" href="#dashboard">Dashboard</a>
 </li>
 <li class="nav-item">
-<a class="nav-link" href="#transaction">Transaction</a>
+<a class="nav-link" href="#add-transaction">Transaction</a>
 </li>
 <li class="nav-item">
-<a class="nav-link" href="#report">Reports</a>
+<a class="nav-link" href="#reports">Reports</a>
 </li>
 </ul>
 <form class="d-flex" role="search">
@@ -45,7 +45,7 @@ aria-expanded="false" aria-label="Toggle navigation">
 <div class="card">
 <div class="card-body">
 <h5 class="card-title">Total Balance</h5>
-<p class="card-text" id="total balance">60</p>
+<p class="card-text" id="total-balance">60</p>
 </div>
 </div>
 </div>
@@ -53,7 +53,7 @@ aria-expanded="false" aria-label="Toggle navigation">
 <div class="card">
 <div class="card-body">
 <h5 class="card-title">Total Income</h5>
-<p class="card-text" id="total income">60</p>
+<p class="card-text" id="total-income">60</p>
 </div>
 </div>
 </div>
@@ -61,7 +61,7 @@ aria-expanded="false" aria-label="Toggle navigation">
 <div class="card">
 <div class="card-body">
 <h5 class="card-title">Total Expense</h5>
-<p class="card-text" id="total expense">60</p>
+<p class="card-text" id="total-expense">60</p>
 </div>
 </div>
 </div>
@@ -87,15 +87,15 @@ aria-expanded="false" aria-label="Toggle navigation">
 </select>
 <div >
 <label>Description</label>
-<input type="text" id="101" placeholder="description" required>
+<input type="text" id="description" placeholder="description" required>
 </div>
 <div >
 <label>Amount</label>
-<input type="number" id="102" min="1" required>
+<input type="number" id="amount" min="1" required>
 </div>
 <div >
 <label>Category</label>
-<select id="103" required>
+<select id="category" required>
 <option >Select category</option>
 <option value="food">Food</option>
 <option value="travel">Travel</option>
@@ -108,7 +108,7 @@ aria-expanded="false" aria-label="Toggle navigation">
 </div>
 <div >
 <label>Date</label>
-<input type="date" id="104" required>
+<input type="date" id="date" required>
 </div>
 <div >
 <button type="submit" > Add Transaction</button>
@@ -116,7 +116,7 @@ aria-expanded="false" aria-label="Toggle navigation">
 </form>
 </div>
 </section>
-<section id="transaction history">
+<section id="transaction-history">
 <div class="search">
 <h3>Transactions</h3>
 <div id="searchBox">
@@ -180,8 +180,8 @@ aria-expanded="false" aria-label="Toggle navigation">
 <div class="col-md-6">
 <div class="card">
 <div class="card-body">
-<h5 class="card-title">Saving</h5>
-<p class="card-text" id="net-saving">60</p>
+<h5 class="card-title">Net Saving</h5>
+<p class="card-text" id="net-savings">60</p>
 </div>
 </div>
 </div>
@@ -198,26 +198,26 @@ aria-expanded="false" aria-label="Toggle navigation">
   </div>
   <div class="breakdown">
     <h3>Expense Breakdown</h3>
-    <div id="breakdown-chart">
-      <canvas></canvas>
+    <div >
+      <canvas id="breakdown-chart"></canvas>
     </div>
   </div>
   <div class="income-expenses">
     <h3>Income vs Expense</h3>
-    <div id="income-chart">
-      <canvas></canvas>
+    <div >
+      <canvas id="income-chart"></canvas>
     </div>
   </div>
     <div class="monthly-spending">
       <h3>Monthly Spending Chart</h3>
-      <div id="monthly-spendingchart">
-        <canvas></canvas>
+      <div >
+        <canvas id="monthly-spendingchart"></canvas>
       </div>
     </div>
 <div class="highest-spending">
     <h3>Highest Spending Category</h3>
-    <div id="highest-spendingchart">
-      <canvas></canvas>
+    <div>
+      <canvas id="highest-spendingchart"></canvas>
     </div>
   </div>
 
