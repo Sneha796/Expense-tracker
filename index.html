@@ -34,6 +34,7 @@ aria-expanded="false" aria-label="Toggle navigation">
 <li class="nav-item">  
 <a class="nav-link" href="#reports">Reports</a>  
 </li>  
+<button type="button" id="theme-toggle">Dark Mode</button>
 </ul>  
 <form class="d-flex" role="search">  
 <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search"/>  
@@ -44,13 +45,14 @@ aria-expanded="false" aria-label="Toggle navigation">
 </nav>  
 </header>  
 <main>  
-<section id="dashboard">  
+<section id="dashboard">
+  <h3>Financial Overview</h3>
 <div class="row g-4">  
 <div class="col-md-6">  
 <div class="card">  
 <div class="card-body">  
 <h5 class="card-title">Total Balance</h5>  
-<p class="card-text" id="total-balance">60</p>  
+<p class="card-text" id="total-balance">₹60</p>  
 </div>  
 </div>  
 </div>  
@@ -58,7 +60,7 @@ aria-expanded="false" aria-label="Toggle navigation">
 <div class="card">  
 <div class="card-body">  
 <h5 class="card-title">Total Income</h5>  
-<p class="card-text" id="total-income">60</p>  
+<p class="card-text" id="total-income">₹60</p>  
 </div>  
 </div>  
 </div>  
@@ -66,7 +68,7 @@ aria-expanded="false" aria-label="Toggle navigation">
 <div class="card">  
 <div class="card-body">  
 <h5 class="card-title">Total Expense</h5>  
-<p class="card-text" id="total-expense">60</p>  
+<p class="card-text" id="total-expense">₹60</p>  
 </div>  
 </div>  
 </div>  
@@ -74,31 +76,32 @@ aria-expanded="false" aria-label="Toggle navigation">
 <div class="card">  
 <div class="card-body">  
 <h5 class="card-title">Savings</h5>  
-<p class="card-text" id="savings">60</p>  
+<p class="card-text" id="savings">₹60</p>  
 </div>  
 </div>  
 </div>  
 </div>  
 </section>   
-<section id="add-transaction">  
+<section id="add-transaction"> 
+  <h3>Add New Transaction</h3>
 <div class="Transaction-form">  
 <form id="form">  
-<label>Transaction type:</label>  
+<label for="transaction">Transaction type:</label>  
 <select id="transaction" required>  
 <option value="">Select Type</option>  
 <option value="expense">Expense</option>  
 <option value="income">Income</option>  
 </select>  
 <div >  
-<label>Description</label>  
+<label for="description">Description</label>  
 <input type="text" id="description" placeholder="description" required>  
 </div>  
 <div >  
-<label>Amount</label>  
+<label for="amount">Amount</label>  
 <input type="number" id="amount" min="1" required>  
 </div>  
 <div >  
-<label>Category</label>  
+<label for="category">Category</label>  
 <select id="category" required>  
 <option value="">Select category</option>  
 <option value="food">Food</option>  
@@ -111,7 +114,7 @@ aria-expanded="false" aria-label="Toggle navigation">
 </select>  
 </div>  
 <div >  
-<label>Date</label>  
+<label for="date">Date</label>  
 <input type="date" id="date" required>  
 </div>  
 <div >  
@@ -122,7 +125,7 @@ aria-expanded="false" aria-label="Toggle navigation">
 </section>  
 <section id="transaction-history">  
 <div class="search">  
-<h3>Transactions</h3>  
+<h3>Transaction History</h3>  
 <div id="searchBox">  
 <input type="text" id="search" placeholder="🔍 Search transaction">  
 </div>  
@@ -142,7 +145,8 @@ aria-expanded="false" aria-label="Toggle navigation">
   </tbody>  
 </table>   
 </section>  
-<section id="budget">  
+<section id="budget"> 
+  <h3>Monthly Budget Overview</h3>
   <div>  
   <div>  
     <label>Monthly budget</label>  
@@ -163,6 +167,7 @@ aria-expanded="false" aria-label="Toggle navigation">
   </div>  
 </section>  
 <section id="reports">  
+  <h2>Financial Reports</h2>
   <div class="summary">  
     <div>  
       <h3>Monthly Summary</h3>  
