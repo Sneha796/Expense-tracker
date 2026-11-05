@@ -40,7 +40,7 @@ aria-expanded="false" aria-label="Toggle navigation">
 </header>
 <main>
 <section id="dashboard">
-<div row g-4>
+<div class="row g-4">
 <div class="col-md-6">
 <div class="card">
 <div class="card-body">
@@ -157,8 +157,91 @@ aria-expanded="false" aria-label="Toggle navigation">
   </div>
 </section>
 <section id="reports">
-  <div>
-    <div></div>
+  <div class="summary">
+    <div>
+      <h3>Monthly Summary</h3>
+      <div class="row g-4">
+<div class="col-md-6">
+<div class="card">
+<div class="card-body">
+<h5 class="card-title">Total Income</h5>
+<p class="card-text" id="total-income">60</p>
+</div>
+</div>
+</div>
+<div class="col-md-6">
+<div class="card">
+<div class="card-body">
+<h5 class="card-title">Total Expenses</h5>
+<p class="card-text" id="total-expenses">60</p>
+</div>
+</div>
+</div>
+<div class="col-md-6">
+<div class="card">
+<div class="card-body">
+<h5 class="card-title">Saving</h5>
+<p class="card-text" id="net-saving">60</p>
+</div>
+</div>
+</div>
+<div class="col-md-6">
+<div class="card">
+<div class="card-body">
+<h5 class="card-title">Savings Rate</h5>
+<p class="card-text" id="savings-rate">60</p>
+</div>
+</div>
+</div>
+      </div>
+    </div>
+  </div>
+  <div class="breakdown">
+    <h3>Expense Breakdown</h3>
+    <div id="breakdown-chart">
+      <canvas></canvas>
+    </div>
+  </div>
+  <div class="income-expenses">
+    <h3>Income vs Expense</h3>
+    <div id="income-chart">
+      <canvas></canvas>
+    </div>
+  </div>
+    <div class="monthly-spending">
+      <h3>Monthly Spending Chart</h3>
+      <div id="monthly-spendingchart">
+        <canvas></canvas>
+      </div>
+    </div>
+<div class="highest-spending">
+    <h3>Highest Spending Category</h3>
+    <div id="highest-spendingchart">
+      <canvas></canvas>
+    </div>
+  </div>
+
+<div class="financial-insights">
+    <h3>Financial Insights</h3>
+    <div id="insight">
+      <div>
+        <h5>Highest Spending Category</h5>
+        <p></p>
+      </div>
+      <div>
+        <h5>Monthly Savings</h5>
+        <p></p>
+      </div>
+      <div>
+        <h5>Spending Comparison</h5>
+        <p></p>
+      </div>
+      <div>
+        <h5>Budget Status</h5>
+        <p></p>
+      </div>
+    </div>
+  </div>
   </div>
 </section>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
