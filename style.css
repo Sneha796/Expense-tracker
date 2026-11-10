@@ -1,1 +1,10 @@
+.navbar-brand{
+  color:blue;
+  background-color:white;
+  font-family:arial,sans-serif,verdana;
+  font-weight:500;
+  flex-box:grid;
+  justify-content:center;
+  align-items:center;
+}
 
