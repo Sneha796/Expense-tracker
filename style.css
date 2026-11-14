@@ -2,7 +2,8 @@
 padding:20px;
 margin:20px;
 font-family:verdana;
-scroll-behavior:smooth;
+background-color:#F1F5F9;
+color:black;
 }
 navbar{
 background-color:#F1F5F9;
@@ -11,7 +12,7 @@ display:flex;
 align-items:center;
 justify-content:center;
 padding:20px, 20px;
-width:250;
+width:300;
 }
 .nav-ink{
 display:flex;
