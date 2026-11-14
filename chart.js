@@ -9,7 +9,7 @@ const chartData={
 }
 const chartConfig={
   type:'doughnut', 
-  data:'chartData'
+  data:chartData
 };
 new Chart(chartexpense,chartConfig);
 
@@ -19,21 +19,21 @@ const incomeExpenseData={
   labels:['January','February','March','April','May','June','July','August','September','October','November','December'], 
   datasets:[{label:'Income', 
             data:[3000,4500,8562,5392,8064,4727,6050,5943,7050,3747,9695,3830],
-            backgroundColor:'Green'}
+            backgroundColor:'#16A34A'}
             {label:'Expense', 
             data:[8946, 5343,9556,5353,5956,2315,5616,2323,9546,5353,4546,1355], 
-            backgroundColor:'Red'}
+            backgroundColor:'#DC2626'}
 }]
 const incomeConfig={
   type:'bar', 
-  data:'incomeExpenseData'
+  data:incomeExpenseData
 }
 new Chart(chartincome,incomeConfig);
 
 const spending=
 document.getElementById('monthly-spendingchart')
 
-const spending={
+const expenses={
   labels:['January','February','March','April','May','June','July','August','September','October','November','December'], 
   datasets:[{
     label:'Monthly Expense', 
@@ -44,6 +44,6 @@ const spending={
 }
 const spendingConfig={
   type:'line', 
-  data:'spending'
+  data:expenses
 }
 new Chart(chartspending,spendingConfig) 
