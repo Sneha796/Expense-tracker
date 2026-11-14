@@ -47,7 +47,8 @@ const expenses={
     label:'Monthly Expense', 
     data:[5000,4500,7000,5318,8953,2323,5548,5526,9548,5248,7215,5287], 
     backgroundColor:'#DC2626', 
-    pointBorderColor:'black'
+    pointBorderColor:'black', 
+    fill:true, 
   }]
 }
 const spendingConfig={
