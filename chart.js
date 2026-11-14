@@ -1,9 +1,9 @@
 const expense=
 document.getElementById('breakdown-chart');
 const chartData={
-  labels:['food','travel','shopping,bills','education','healthcare'], 
+  labels:['food','travel','shopping','bills','education','healthcare'], 
   datasets:[{
-  data:[3500,1000,2500,4800]
+  data:[3500,1000,2500,4800,5578,6548]
   backgroundColor:['blue','orange','purple','red','green','teal']
   }]     
 }
