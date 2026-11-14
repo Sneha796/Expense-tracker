@@ -1,10 +1,22 @@
-.navbar-brand{
-  color:blue;
-  background-color:white;
-  font-family:arial,sans-serif,verdana;
-  font-weight:500;
-  flex-box:grid;
-  justify-content:center;
-  align-items:center;
+navbar{
+background-color:#F1F5F9;
+color:black;
+display:flex;
+align-items:center;
+justify-content:center;
+padding:20px, 20px;
 }
-
+.nav-ink{
+display:flex;
+justify-content:center;
+align-items:center;
+font-weight:400;
+padding:25px, 25px;
+border-radius:15px;
+}
+.nav-link:hover{
+background-color:#DBEAFE;
+transition:all 3sec ease-out;
+border-radius:10px;
+cursor:pointer;
+}
