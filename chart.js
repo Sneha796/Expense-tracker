@@ -1,8 +1,8 @@
 const expense=
 document.getElementById('breakdown-chart');
 const chartData={
-  labels:[food,travel,shopping,bills,education,other], 
-  dataset:[{
+  labels:['food','travel','shopping,bills','education','healthcare'], 
+  datasets:[{
   data:[3500,1000,2500,4800]
   backgroundColor:['blue','orange','purple','red','green','teal']
   }]     
@@ -11,7 +11,7 @@ const chartConfig={
   type:'doughnut', 
   data:'chartData'
 };
-new Chart(chartCanvas,chartConfig);
+new Chart(chartexpense,chartConfig);
 
 const income=
 document.getElementById('income-chart');
@@ -28,7 +28,7 @@ const incomeConfig={
   type:'bar', 
   data:'incomeExpenseData'
 }
-new Chart(chartCanvas,incomeConfig);
+new Chart(chartincome,incomeConfig);
 
 const spending=
 document.getElementById('monthly-spendingchart')
@@ -46,4 +46,4 @@ const spendingConfig={
   type:'line', 
   data:'spending'
 }
-new Chart(chartCanvas,spendingConfig) 
+new Chart(chartspending,spendingConfig) 
